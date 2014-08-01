@@ -1,4 +1,1 @@
-linuxcraft
-==========
 
-My ComputerCraft OS!
