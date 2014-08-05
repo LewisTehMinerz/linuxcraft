@@ -1,9 +1,8 @@
---[[
-Raw example of bash
-]]--
+local history = {}
 
 while true do
-write("[example@example /] ")
-ans = read()
-shell.run(ans)
+write("[" .. user .. "@" .. host .. " /" .. shell.dir() .. "]$ ")
+local input = read(nil, history)
+table.insert(history, input)
+shell.run(input)
 end
